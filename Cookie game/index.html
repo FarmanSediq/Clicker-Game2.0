@@ -4,11 +4,21 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <span id ="score">0</span> Chips <br>
-        <span id="scorepersecond">0</span> Chips per second <br>
-
-        <img src="images/chips.png" alt="" height="256px" width="256px" onclick="addToScore(clickingPower)">
+    <div class="sectionLeft">
+    <center>
+        <div class="scoreContainer">
+            <span id ="score">0</span> Chips <br>
+            <span id="scorepersecond">0</span> Chips per second <br>
+        </div> 
+        <br>  
+        <div class="clickerContainer"></div>
+            <img src="images/chips.png" alt="" height="256px" width="256px" onclick="addToScore(clickingPower)">
+        </div>
+    </center>
+    </div>
+    <div class="sectionRight">
         <button onclick="buyCursor()">Cursor [<span id ="cursorcost">15</span>] -- <span id="cursors">0</span></button>
         <button onclick="buyGrandma()">Grandma [<span id ="grandmacost">100</span>] -- <span id="grandmas">0</span></button>
-    <script src="script.js"></script>
+    </div>
+        <script src="script.js"></script>
 </html>
