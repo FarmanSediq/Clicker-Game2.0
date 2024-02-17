@@ -11,14 +11,32 @@
             <span id="scorepersecond">0</span> Chips per second <br>
         </div> 
         <br>  
-        <div class="clickerContainer"></div>
+        <div class="clickerContainer">
             <img src="images/chips.png" alt="" height="256px" width="256px" onclick="addToScore(clickingPower)">
         </div>
     </center>
     </div>
     <div class="sectionRight">
-        <button onclick="buyCursor()">Cursor [<span id ="cursorcost">15</span>] -- <span id="cursors">0</span></button>
-        <button onclick="buyGrandma()">Grandma [<span id ="grandmacost">100</span>] -- <span id="grandmas">0</span></button>
+       <table class="shopButton" onclick="buyCursor()">
+            <tr>
+                <td id="image"><img src="images/cursor.png" alt=""></td>
+                <td id ="nameAndCost">
+                    <p>Cursor</p>
+                    <p><span id="cursorcost">15</span>Chips</p>
+                </td>
+                <td id ="amount"><span id="cursors">0</span></td>
+            </tr>
+    </table>
+    <table class="shopButton" onclick="buyGrandma()">
+        <tr>
+            <td id="image"><img src="images/grandma.png" alt=""></td>
+            <td id ="nameAndCost">
+                <p>Grandma</p>
+                <p><span id="grandmaCost">15</span>Chips</p>
+            </td>
+            <td id ="amount"><span id="grandmas">0</span></td>
+        </tr>
+</table>
     </div>
         <script src="script.js"></script>
 </html>
