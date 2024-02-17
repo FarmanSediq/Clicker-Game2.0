@@ -36,6 +36,7 @@
     border-radius:10px;
     width:100%;
     margin: 10px 0px 10px 0px;
+    cursor:pointer;
 }
 .shopButton:hover{
     background-color: #c7c7c7;
@@ -65,4 +66,12 @@
     color: #595959;
     font-family: roboto;
     width:15%;
+}
+
+.unselectable{
+    user-select:none;
+}
+
+.sectionFooter{
+    margin-top:20%;
 }

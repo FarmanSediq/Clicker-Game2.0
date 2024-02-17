@@ -6,7 +6,7 @@
     <body>
     <div class="sectionLeft">
     <center>
-        <div class="scoreContainer">
+        <div class="scoreContainer unselectable">
             <span id ="score">0</span> Chips <br>
             <span id="scorepersecond">0</span> Chips per second <br>
         </div> 
@@ -15,8 +15,11 @@
             <img src="images/chips.png" alt="" height="256px" width="256px" onclick="addToScore(clickingPower)">
         </div>
     </center>
+    <div class="sectionFooter">
+        <h5>Chips Clicker</h5>
     </div>
-    <div class="sectionRight">
+    </div>
+    <div class="sectionRight unselectable">
        <table class="shopButton" onclick="buyCursor()">
             <tr>
                 <td id="image"><img src="images/cursor.png" alt=""></td>
@@ -27,7 +30,7 @@
                 <td id ="amount"><span id="cursors">0</span></td>
             </tr>
     </table>
-    <table class="shopButton" onclick="buyGrandma()">
+    <table class="shopButton unselectable" onclick="buyGrandma()">
         <tr>
             <td id="image"><img src="images/grandma.png" alt=""></td>
             <td id ="nameAndCost">
@@ -36,6 +39,53 @@
             </td>
             <td id ="amount"><span id="grandmas">0</span></td>
         </tr>
+</table>
+<table class="shopButton" onclick="buyOven()">
+    <tr>
+        <td id="image"><img src="images/oven.png" alt=""></td>
+        <td id ="nameAndCost">
+            <p>Oven</p>
+            <p><span id="ovencost">1000</span>Chips</p>
+        </td>
+        <td id ="amount"><span id="ovens">0</span></td>
+    </tr>
+</table>
+<table class="shopButton" onclick="buyOven()">
+    <tr>
+        <td id="image"><img src="images/oven.png" alt=""></td>
+        <td id ="nameAndCost">
+            <p>Oven</p>
+            <p><span id="ovencost">1000</span>Chips</p>
+        </td>
+        <td id ="amount"><span id="ovens">0</span></td>
+    </tr>
+</table><table class="shopButton" onclick="buyOven()">
+    <tr>
+        <td id="image"><img src="images/oven.png" alt=""></td>
+        <td id ="nameAndCost">
+            <p>Oven</p>
+            <p><span id="ovencost">1000</span>Chips</p>
+        </td>
+        <td id ="amount"><span id="ovens">0</span></td>
+    </tr>
+</table><table class="shopButton" onclick="buyOven()">
+    <tr>
+        <td id="image"><img src="images/oven.png" alt=""></td>
+        <td id ="nameAndCost">
+            <p>Oven</p>
+            <p><span id="ovencost">1000</span>Chips</p>
+        </td>
+        <td id ="amount"><span id="ovens">0</span></td>
+    </tr>
+</table><table class="shopButton" onclick="buyOven()">
+    <tr>
+        <td id="image"><img src="images/oven.png" alt=""></td>
+        <td id ="nameAndCost">
+            <p>Oven</p>
+            <p><span id="ovencost">1000</span>Chips</p>
+        </td>
+        <td id ="amount"><span id="ovens">0</span></td>
+    </tr>
 </table>
     </div>
         <script src="script.js"></script>
